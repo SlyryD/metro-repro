@@ -1,0 +1,33 @@
+{
+  "name": "@foo/baz",
+  "version": "1.0.0",
+  "description": "Bar package",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "sideEffects": false,
+  "repository": "https://github.com/SlyryD/metro-repro.git",
+  "author": "SlyryD",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "bundle": "react-native bundle --entry-file lib/index.js --bundle-output dist/bundle.js --config metro.config.js --platform ios --minify false --dev true --sourcemap-output dist/bundle.js.map"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@foo/bar": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@react-native-community/cli": "^6.0.0",
+    "@rnx-kit/metro-config": "^1.2.36",
+    "@rnx-kit/metro-plugin-cyclic-dependencies-detector": "^1.0.22",
+    "@rnx-kit/metro-plugin-duplicates-checker": "^1.2.16",
+    "@rnx-kit/metro-resolver-symlinks": "^0.1.21",
+    "@rnx-kit/metro-serializer": "^1.0.11",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react": "^17.0.2",
+    "react-native": "^0.68.3"
+  }
+}

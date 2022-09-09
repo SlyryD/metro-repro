@@ -1,0 +1,12 @@
+{
+  "name": "metro-repro",
+  "version": "1.0.0",
+  "description": "Example for metro-bundler repro",
+  "repository": "https://github.com/SlyryD/metro-repro.git",
+  "author": "SlyryD",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
