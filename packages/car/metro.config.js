@@ -35,9 +35,6 @@ module.exports = makeMetroConfig({
       },
     }),
   },
-
-  // Pretend @foo/bar is external package in symlinked node_modules directory
-  watchFolders: [path.resolve(__dirname, "..", "..", "node_modules")],
 });
 
 console.log(module.exports);
